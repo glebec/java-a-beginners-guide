@@ -4,8 +4,8 @@
 
 Term | Notes
 ----:|:-----
-Compilation unit | source file, 1+ class defs
-Access modifier | privilege level, e.g. `public`
+compilation unit | source file, 1+ class defs
+access modifier | privilege level, e.g. `public`
 
 ## Notes
 
@@ -21,5 +21,11 @@ Access modifier | privilege level, e.g. `public`
     - `int` (supports truncated division)
     - `float` (32 bit)
     - `double` (64 bit, more common)
+- control flow
+    - `if (condition) statement` / `if (condition) statement1 else statement2`
+    - `for (init; cond; iter) statement`
+- operators
+    - `==` and `!=` for equality checks, typical`<` / `<=` etc.
+    - `++` and `--`
 
 > "Java supports three styles of comments"
