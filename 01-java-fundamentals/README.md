@@ -21,11 +21,32 @@ access modifier | privilege level, e.g. `public`
     - `int` (supports truncated division)
     - `float` (32 bit)
     - `double` (64 bit, more common)
+    - `boolean`
+    - `char`
 - control flow
     - `if (condition) statement` / `if (condition) statement1 else statement2`
     - `for (init; cond; iter) statement`
+    - `break`, `continue`
+    - `switch`, `case`, `default`
+    - `goto` (!?)
+    - `try`, `catch`, `finally`, `throw`
+    - `for`, `do`, `while`
 - operators
     - `==` and `!=` for equality checks, typical`<` / `<=` etc.
     - `++` and `--`
+- OOP
+    - `class`, `new`, `this`, `super`, `extends`
+    - `abstract`, `interface`
+    - `instanceof`
+    - `private`, `protected`, `public`
+    - `static`
+- Keywords
+    - 61 of them, many above
+    - `const` and `goto` are reserved but unused
+    - also, `true` / `false` / `null` reserved, and sometimes `var` (contextual)
+- Identifiers
+    - begin with letters, `_`, or `$`
+    - can continue with any of the above + digits
+    - case-sensitive
 
 > "Java supports three styles of comments"
