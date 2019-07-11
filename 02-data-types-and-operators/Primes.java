@@ -5,17 +5,19 @@ public class Primes {
 
     public static void main(String[] args) {
         // sieve of Eratosthenes
-        int[] maybePrimes = new int[99];
+        boolean[] isPrime = new boolean[101];
         for (int i = 2; i <= 100; i++) {
-            maybePrimes[i - 2] = i;
+            isPrime[i] = true;
         }
-        for (int i = 2; i <= 100; i++) {
-            for (int j = 2 * i; j <= 100; j += i) {
-                maybePrimes[j - 2] = -1;
+        for (int i = 2; i*i <= 100; i++) {
+            if (isPrime[i]) {
+                for (int j = 2 * i; j <= 100; j += i) {
+                    isPrime[j] = false;
+                }
             }
         }
         for (int i = 2; i <= 100; i++) {
-            if (maybePrimes[i - 2] != -1) {
+            if (isPrime[i]) {
                 System.out.println(i);
             }
         }
