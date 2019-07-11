@@ -1,4 +1,4 @@
-class Scratch {
+class Scratch1 {
     public static void main (String args[]) {
         if (false) {
             System.out.println("can use block statements");
