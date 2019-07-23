@@ -29,11 +29,11 @@ public class FlipCase {
     }
 
     private static boolean isLower(char letter) {
-        return 97 <= letter && letter <= 122;
+        return 'a' <= letter && letter <= 'z';
     }
 
     private static boolean isUpper(char letter) {
-        return 65 <= letter && letter <= 90;
+        return 'A' <= letter && letter <= 'Z';
     }
 
     private static char toLower(char letter) {
