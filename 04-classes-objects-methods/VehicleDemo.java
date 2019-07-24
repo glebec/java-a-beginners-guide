@@ -4,15 +4,15 @@
 public class VehicleDemo {
 
     public static void main(String[] args) {
-        Vehicle minivan = new Vehicle();
-        minivan.passengers = 7;
-        minivan.fuelcap = 16;
-        minivan.mpg = 21;
+        Vehicle minivan = new Vehicle(7, 16, 21);
+        // minivan.passengers = 7;
+        // minivan.fuelcap = 16;
+        // minivan.mpg = 21;
 
-        Vehicle sportscar = new Vehicle();
-        sportscar.passengers = 2;
-        sportscar.fuelcap = 14;
-        sportscar.mpg = 12;
+        Vehicle sportscar = new Vehicle(2, 14, 12);
+        // sportscar.passengers = 2;
+        // sportscar.fuelcap = 14;
+        // sportscar.mpg = 12;
 
         int mRange = minivan.fuelcap * minivan.mpg;
 

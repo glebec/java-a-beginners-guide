@@ -2,9 +2,15 @@
  * Vehicle
  */
 public class Vehicle {
+
     int passengers;
     int fuelcap;
     int mpg;
+    Vehicle (int passengers, int fl, int ml) {
+        this.passengers = passengers; // one use case for `this`
+        fuelcap = fl;
+        mpg = ml;
+    }
 
     int getRange () {
         return fuelcap * mpg;
