@@ -18,6 +18,14 @@ int[][] table2 = new int[][] { {1, 2, 3}, {4, 5, 6} }; // [[1, 2, 3], [4, 5, 6]]
 int[][] table3 = new int[][] { {1, 2, 3}, {4, 5} }; // [[1, 2, 3], [4, 5]]
 ```
 
+## For-Each Loop
+
+Can be exited early with `break`.
+
+```java
+for (int el : arr) { ... }
+```
+
 ## Java Seemingly Cannot Do Statically Type-Safe Generic Arrays?
 
 Wheeee. Spent hours today down this "fun" rabbit hole.
