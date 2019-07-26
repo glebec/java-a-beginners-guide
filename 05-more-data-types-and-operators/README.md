@@ -109,3 +109,7 @@ Op    | Description
   - alternatively, `ch & 0b1111111111011111`
   - `ch | 32` to lowercase
 - can `&` a num with different powers of two to print out the bits
+
+## The Ternary `?` Operator
+
+- semi-lazy in its second and third argument, like in JS
