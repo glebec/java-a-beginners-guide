@@ -88,3 +88,24 @@ Some common methods:
 - Cannot be a recursive definition
 - Mostly useful for reference types, e.g. `var q = new Queue<Integer>(2)`
 - `for (var v : nums) {...}`
+
+## Bitwise Ops
+
+Op    | Description
+------|------------
+`&`   | AND
+`|`   | OR
+`^`   | XOR
+`~`   | NOT (one's complement)
+`<<`  | Left shift
+`>>`  | Right shift
+`>>>` | Unsigned (zero-fill) right shift
+
+- can be used on `long`, `int`, `short`, `char`, or `byte`
+  - ops on `byte` and `short` promote val to `int`
+- cannot be used on `boolean`, `float`, or `double`
+- all ops can be combined with assignment in shorthand, e.g. `x ^= y`
+- fun trick, `ch & 65503` turns off sixth bit – uppercasing an ASCII letter.
+  - alternatively, `ch & 0b1111111111011111`
+  - `ch | 32` to lowercase
+- can `&` a num with different powers of two to print out the bits
