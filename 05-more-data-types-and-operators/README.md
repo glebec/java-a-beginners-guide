@@ -18,7 +18,7 @@ int[][] table2 = new int[][] { {1, 2, 3}, {4, 5, 6} }; // [[1, 2, 3], [4, 5, 6]]
 int[][] table3 = new int[][] { {1, 2, 3}, {4, 5} }; // [[1, 2, 3], [4, 5]]
 ```
 
-## For-Each Loop
+### For-Each Loop
 
 Can be exited early with `break`.
 
@@ -26,7 +26,7 @@ Can be exited early with `break`.
 for (int el : arr) { ... }
 ```
 
-## Java Seemingly Cannot Do Statically Type-Safe Generic Arrays?
+### Java Seemingly Cannot Do Statically Type-Safe Generic Arrays?
 
 Wheeee. Spent hours today down this "fun" rabbit hole.
 
@@ -57,3 +57,26 @@ Relevant [Stack Overflow](https://stackoverflow.com/questions/529085/how-to-crea
 Ultimately, I'm going with _Effective Java_ Item 28: "Prefer Lists to Arrays."
 
 > _"In summary, arrays and generics have very different type rules. Arrays are covariant and reified; generics are invariant and erased. As a consequence, arrays provide runtime type safety but not compile-time type safety, and vice-versa for generics. …your first impulse should be to replace the arrays with lists."_ — Effective Java
+
+## Strings
+
+- Java `String`s are objects.
+- Can instantiate using literals, but also `new String("something")`.
+- Book implies that `==` checks reference equality, but empirically two separate strings seem to `==` each other by value?
+  - boxed string via `new String("str")` uses reference equality
+  - string literal via `"str"` uses value equality
+  - mixed strings use reference
+  - use `equals` method for safety
+- `String` instances are immutable, but there are also `StringBuffer` and `StringBuilder` classes which are mutable.
+- `String` vals can be used in `switch` expressions.
+- CLI args as `String[] args` passed into `main` by runtime
+
+Some common methods:
+
+- `boolean equals(str)`
+- `int length()`
+- `char charAt(index)`
+- `int compareTo(str)` -> less than 0, greater than 0, or 0
+- `int indexOf(str)` -> index or -1
+- `int lastIndexOf(str)` -> index or -1
+- `String substring(int start, int end)`

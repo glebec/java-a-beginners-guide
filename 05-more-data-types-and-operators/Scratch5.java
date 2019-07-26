@@ -35,6 +35,25 @@ public class Scratch5 {
         debug(table2);
         debug(table3);
 
+        // some string stuff
+        String ex1 = "hello";
+        String ex2 = "hello";
+        System.out.println("string lits ==? " + (ex1 == ex2)); // true
+        System.out.println("string lits `equals`? " + (ex1.equals(ex2))); // true
+
+        String ex3 = new String("hello");
+        String ex4 = new String("hello");
+        System.out.println("boxed strings ==? " + (ex3 == ex4)); // false
+        System.out.println("boxed strings `equals`? " + (ex1.equals(ex2))); // true
+
+        System.out.println("raw str == boxed? " + (ex1 == ex3)); // false
+        System.out.println("raw str `equals` boxed? " + (ex1.equals(ex3))); // true
+
+        // substring index behavior
+        String from3 = ex1.substring(3); // "lo"
+        // String tooFar = ex1.substring(0, 9); // out of bounds exception
+        // String negIndex = ex1.substring(0, -1); // out of bounds exception
+        System.out.println("from3: " + from3);
     }
 
     private static void debug (int[][] table) {
