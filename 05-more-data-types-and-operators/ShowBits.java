@@ -12,7 +12,7 @@ public class ShowBits {
 
     // actual arguments can be widened automatically
     String show (long val) {
-        long mask = 1;
+        var mask = 1L; // previously long mask = 1;
         String bits = "";
         for (int i = 1; i <= size; i++, val >>= 1) {
             bits += (val & mask) == 1 ? "1" : "0";

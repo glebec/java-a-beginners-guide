@@ -7,6 +7,11 @@ public class Scratch5 {
 
     public static void main(String[] args) {
 
+        // self-test question 6:
+        var len = "Java".length();
+        var fst = "Java".charAt(0);
+        System.out.println("Java length and first char: " + len + " " + fst);
+
         // irregular multidimensional array
         int[][] twoCols = new int[2][];
         // initialized inline
