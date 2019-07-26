@@ -80,3 +80,11 @@ Some common methods:
 - `int indexOf(str)` -> index or -1
 - `int lastIndexOf(str)` -> index or -1
 - `String substring(int start, int end)`
+
+## Local Type Inference
+
+- Use `var` & must include initialization
+- Cannot initialize to `null`
+- Cannot be a recursive definition
+- Mostly useful for reference types, e.g. `var q = new Queue<Integer>(2)`
+- `for (var v : nums) {...}`
