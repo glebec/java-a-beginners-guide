@@ -37,3 +37,25 @@ class Foo {
     Foo (Foo foo) { i = foo.i; } // privacy by class, not instance
 }
 ```
+
+## Static
+
+Java classes have:
+
+- static instance variables
+- static methods
+- static blocks (run when class is first loaded)
+
+```java
+class HasStaticBlock {
+
+    static int saved;
+
+    static {
+        System.out.println("Running on init, before constructor")
+        saved = SomeClass.someExpensiveComputation();
+    }
+
+    // ...
+}
+```
